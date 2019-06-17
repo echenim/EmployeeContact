@@ -8,3 +8,13 @@ D:\WorksCali\Microsoft\HumanManager\Portal.Domain\obj\Debug\netcoreapp2.2\Portal
 D:\WorksCali\Microsoft\HumanManager\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.AssemblyInfo.cs
 D:\WorksCali\Microsoft\HumanManager\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.dll
 D:\WorksCali\Microsoft\HumanManager\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.pdb
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\bin\Debug\netcoreapp2.2\Portal.Domain.deps.json
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\bin\Debug\netcoreapp2.2\Portal.Domain.runtimeconfig.json
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\bin\Debug\netcoreapp2.2\Portal.Domain.runtimeconfig.dev.json
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\bin\Debug\netcoreapp2.2\Portal.Domain.dll
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\bin\Debug\netcoreapp2.2\Portal.Domain.pdb
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.csproj.CoreCompileInputs.cache
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.AssemblyInfoInputs.cache
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.AssemblyInfo.cs
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.dll
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Domain\obj\Debug\netcoreapp2.2\Portal.Domain.pdb

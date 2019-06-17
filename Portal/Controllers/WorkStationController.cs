@@ -7,23 +7,39 @@ using Microsoft.AspNetCore.Mvc;
 using Portal.Business.Contracts;
 using Portal.Domain.Models;
 using Portal.Domain.Helper;
+using Portal.Domain.ViewModels;
 
 namespace Portal.Controllers
 {
     public class WorkStationController : Controller
     {
         private readonly IDepartmentService _service;
+        private readonly IPersonService _personService;
 
-        public WorkStationController(IDepartmentService service)
-            => _service = service;
+        public WorkStationController(IDepartmentService service, IPersonService personService)
+        {
+            _service = service;
+            _personService = personService;
+        }
+
         public ActionResult Index(string sortOrder, string searchString)
         {
             ViewBag.ControllerName = UtiOther.GetControllerName(this.ControllerContext);
-
+            var department = new List<DepartmentViewModel>();
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
-            var department = !string.IsNullOrEmpty(searchString) ? _service.Get(s => s.Name.ToLower()
+            var data = !string.IsNullOrEmpty(searchString) ? _service.Get(s => s.Name.ToLower()
             .Contains(searchString.ToLower())) : _service.Get();
+
+            foreach(var item in data)
+            {
+                department.Add(new DepartmentViewModel
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    ResourceCount = item.People.LongCount()
+                });
+            }
            
             return View("_list",department);
         }
@@ -84,5 +100,17 @@ namespace Portal.Controllers
             if (result.Success) return RedirectToAction(nameof(Index));
             return View("_delete", entity);
         }
+
+        // GET: WorkStation/Resource/5
+        public ActionResult Resource(long id)
+        {
+            ViewBag.ControllerName = UtiOther.GetControllerName(this.ControllerContext);
+            ViewBag.DepartmentName =id>0 ? _service.Get(s => s.Id == id).SingleOrDefault().Name.ToString():null;
+            var dataObj =id>0 ? _personService.Get(s=>s.Departments.Id==id) :null;
+
+            return View("_view", dataObj);
+        }
+
+
     }
 }

@@ -17,7 +17,8 @@ namespace Portal.Domain.Models
         [MinLength(5)]
         public string Name { get; set; }
 
-        public virtual ICollection<Person> People { get; set; }
+        public ICollection<Person> People { get; set; }
+        public ICollection<Contacts> Contacts { get; set; }
 
     }
 }

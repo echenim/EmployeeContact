@@ -12,3 +12,17 @@ D:\WorksCali\Microsoft\HumanManager\Portal.Business\obj\Debug\netcoreapp2.2\Port
 D:\WorksCali\Microsoft\HumanManager\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Domain.dll
 D:\WorksCali\Microsoft\HumanManager\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Domain.pdb
 D:\WorksCali\Microsoft\HumanManager\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.csproj.CopyComplete
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Business.deps.json
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Business.runtimeconfig.json
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Business.runtimeconfig.dev.json
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Business.dll
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Business.pdb
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Domain.dll
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\bin\Debug\netcoreapp2.2\Portal.Domain.pdb
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.csprojAssemblyReference.cache
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.csproj.CoreCompileInputs.cache
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.AssemblyInfoInputs.cache
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.AssemblyInfo.cs
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.csproj.CopyComplete
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.dll
+D:\WorksCali\Microsoft\EmployeeContacts\Portal.Business\obj\Debug\netcoreapp2.2\Portal.Business.pdb

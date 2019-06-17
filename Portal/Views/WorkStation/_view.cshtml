@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Portal.Domain.ViewModels.DepartmentViewModel>
+﻿@model IEnumerable<Portal.Domain.ViewModels.PersonViewModel>
 
 @{
     ViewData["Title"] = "_list";
@@ -11,19 +11,14 @@
     <div class="card-body d-sm-flex justify-content-between">
 
         <h4 class="mb-2 mb-sm-0 pt-1">
-            <a href=#" target="_blank">Department</a>
+            <a href=#" target="_blank">@ViewBag.DepartmentName</a>
             <span>/</span>
-            <span>  <a asp-action="Add">Add Department</a></span>
+            <a href=#" target="_blank">Employee</a>
+            <span>/</span>
+            <span>  <a asp-action="Index">List</a></span>
         </h4>
 
-        <form class="d-flex justify-content-center">
-            <!-- Default input -->
-            <input name="SearchString" type="search" placeholder="Type your query" aria-label="Search" class="form-control">
-            <button class="btn btn-primary btn-sm my-0 p" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-
-        </form>
+       
 
     </div>
 
@@ -44,12 +39,21 @@
                         @Html.DisplayName("#")
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.Name)
+                        @Html.DisplayName("Name")
                     </th>
                     <th>
-                        @Html.DisplayName("No of Employee")
+                        @Html.DisplayName("Gender")
                     </th>
-                    <th></th>
+                    <th>
+                        @Html.DisplayName("Phone")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Email")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Address")
+                    </th>
+                   
                 </tr>
             </thead>
             <tbody>
@@ -63,15 +67,16 @@
                         @Html.DisplayFor(modelItem => item.Name)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.ResourceCount)
+                        @Html.DisplayFor(modelItem => item.Gender)
                     </td>
                     <td>
-
-
-                        @Html.ActionLink("View      ", "Resource", new { id = item.Id })|
-                        @Html.ActionLink("Edit      ", "Edit", new { id = item.Id })|
-                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-
+                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
                     </td>
                 </tr>
                 }

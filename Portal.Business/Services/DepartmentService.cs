@@ -21,8 +21,8 @@ namespace Portal.Business.Services
 
         public IQueryable<Departments> Get(Func<Departments, bool> predicate = null)
         => predicate != null 
-            ? _context.Departments.Where(predicate: predicate).AsQueryable() 
-            :  _context.Departments.OrderBy(s => s.Name).AsQueryable();
+            ? _context.Departments.Include(s=>s.People).Where(predicate: predicate).AsQueryable() 
+            :  _context.Departments.Include(s => s.People).OrderBy(s => s.Name).AsQueryable();
 
         public Notifications Save(Departments entity)
         {
