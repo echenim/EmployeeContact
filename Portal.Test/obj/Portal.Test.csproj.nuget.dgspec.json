@@ -4,14 +4,76 @@
     "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\Portal.Test.csproj": {}
   },
   "projects": {
-    "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\Portal.Test.csproj": {
+    "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\Portal.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\Portal.Test.csproj",
-        "projectName": "Portal.Test",
-        "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\Portal.Test.csproj",
+        "projectUniqueName": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\Portal.Business.csproj",
+        "projectName": "Portal.Business",
+        "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\Portal.Business.csproj",
         "packagesPath": "C:\\Users\\Mileva\\.nuget\\packages\\",
-        "outputPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\obj\\",
+        "outputPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mileva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj": {
+                "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj",
+        "projectName": "Portal.Domain",
+        "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj",
+        "packagesPath": "C:\\Users\\Mileva\\.nuget\\packages\\",
+        "outputPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,9 +105,81 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\Portal.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\Portal.Test.csproj",
+        "projectName": "Portal.Test",
+        "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\Portal.Test.csproj",
+        "packagesPath": "C:\\Users\\Mileva\\.nuget\\packages\\",
+        "outputPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mileva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\Portal.Business.csproj": {
+                "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\Portal.Business.csproj"
+              },
+              "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj": {
+                "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj"
+              },
+              "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal\\Portal.csproj": {
+                "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal\\Portal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.0.1, )"
+              "version": "[16.1.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -60,6 +194,82 @@
             "xunit.runner.visualstudio": {
               "target": "Package",
               "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal\\Portal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal\\Portal.csproj",
+        "projectName": "Portal",
+        "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal\\Portal.csproj",
+        "packagesPath": "C:\\Users\\Mileva\\.nuget\\packages\\",
+        "outputPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mileva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\Portal.Business.csproj": {
+                "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Business\\Portal.Business.csproj"
+              },
+              "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj": {
+                "projectPath": "D:\\WorksCali\\Microsoft\\EmployeeContacts\\Portal.Domain\\Portal.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
             }
           },
           "imports": [
