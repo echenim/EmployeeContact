@@ -1,0 +1,15 @@
+1. Solutions was developed and built with Visual Studio 2019
+2. I used AspNet.Core MVC.
+3. I used MSSQL 2017 as the backend database
+4. I used code first 
+
+
+5. After opening the project in visaul studio 2019
+6. Open the appsettuing.json file and update the appropriate connection string information for the MSSQL database.
+7. go to package manager console and make sure the default project is pointing  Portal.Domain
+8. run update-databasse --verbose command
+9. now set the Portal as the start-up project
+10. run the project and your browser will popup with http//localhost:50000
+11. Purpolate department  by clicking the department link on the sidebar
+12. Perform the crud opperation 
+13. Purpolate Employee by clicking on the  Profile link on the sidebar
